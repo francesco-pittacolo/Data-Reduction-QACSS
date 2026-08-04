@@ -53,17 +53,9 @@ def run_method(method_name, cfg, embeddings=None, queries=None, run_dir=None):
         
     method_cfg = cfg["methods"][method_name]
     D, keep_size = build_dataset(method_cfg, cfg, embeddings, queries)
-    print("DEBUG")
-    print("method:", method_name)
-    print("mode:", method_cfg["mode"])
-    print("D size:", len(D))
-    print("keep_size:", keep_size)
-    print("queries before filtering:", len(queries))
 
     queries = filter_queries(queries, D)
-
-    print("queries after filtering:", len(queries))
-    print("first queries:", queries[:3])
+    
     if method_cfg["mode"] == "pool" and not cfg["quiet"] and not cfg.get("_pool_diagnostic_done", False):
         print_coverage_diagnostic(D, queries)
         diagnose_pool_relevance(D, queries)
