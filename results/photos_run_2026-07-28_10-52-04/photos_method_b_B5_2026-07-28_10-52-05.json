@@ -1,0 +1,18 @@
+{
+  "dataset": "photos",
+  "method": "B",
+  "mode": "pool",
+  "D_size": 18,
+  "budget": 5,
+  "score": 0.7008365687099699,
+  "diversity": 0.3995380401611328,
+  "method_time_seconds": 0.000819500011857599,
+  "parameters": {},
+  "selected_ids": [
+    5342,
+    17505,
+    3975,
+    12473,
+    17130
+  ]
+}

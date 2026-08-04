@@ -1,0 +1,87 @@
+[
+    {
+        "method": "B",
+        "budget": 1000,
+        "percentage": 1,
+        "score": 0.681589438875447,
+        "diversity": 0.4906742054554555,
+        "runtime": 0.0884286000218708
+    },
+    {
+        "method": "D",
+        "budget": 1000,
+        "percentage": 1,
+        "alpha": 1,
+        "score": 0.7955192792945804,
+        "diversity": 0.49516184934934937,
+        "runtime": 144.9366311999911
+    },
+    {
+        "method": "B",
+        "budget": 2000,
+        "percentage": 2,
+        "score": 0.8577406582845206,
+        "diversity": 0.49209117058529267,
+        "runtime": 0.1561492999899201
+    },
+    {
+        "method": "D",
+        "budget": 2000,
+        "percentage": 2,
+        "alpha": 1,
+        "score": 0.9407215815840138,
+        "diversity": 0.4949496935967984,
+        "runtime": 161.43359679999412
+    },
+    {
+        "method": "B",
+        "budget": 5000,
+        "percentage": 5,
+        "score": 0.9718994004909185,
+        "diversity": 0.49332998599719946,
+        "runtime": 0.14455029999953695
+    },
+    {
+        "method": "D",
+        "budget": 5000,
+        "percentage": 5,
+        "alpha": 1,
+        "score": 0.9833196419187147,
+        "diversity": 0.4948029605921184,
+        "runtime": 159.69674049998866
+    },
+    {
+        "method": "B",
+        "budget": 10000,
+        "percentage": 10,
+        "score": 0.9855646153376333,
+        "diversity": 0.49382482248224824,
+        "runtime": 0.14494999998714775
+    },
+    {
+        "method": "D",
+        "budget": 10000,
+        "percentage": 10,
+        "alpha": 1,
+        "score": 0.986358934102298,
+        "diversity": 0.49476435643564354,
+        "runtime": 142.2577048999956
+    },
+    {
+        "method": "B",
+        "budget": 20000,
+        "percentage": 20,
+        "score": 0.9894860200470705,
+        "diversity": 0.4942857142857143,
+        "runtime": 0.10229400001117028
+    },
+    {
+        "method": "D",
+        "budget": 20000,
+        "percentage": 20,
+        "alpha": 1,
+        "score": 0.9894659900801627,
+        "diversity": 0.49473965698284916,
+        "runtime": 141.7573390000034
+    }
+]
