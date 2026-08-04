@@ -43,7 +43,6 @@ The quality of a candidate subset `D'` is measured by a **data forgetting object
 │   ├── io_utils.py              # Dataset/query loading, results saving
 │   └── runner.py                # Orchestration: loads data, builds D, runs a method, saves results
 ├── experiments/
-│   ├── query_frequency.py       # Query-frequency analysis / pool construction helper
 │   ├── run_b_d_comparison.py    # Full-dataset comparison of Method B vs Method D across budgets
 │   └── sensitivity_method_d.py  # Sensitivity analysis of Method D w.r.t. alpha / expansion / budget
 ├── results/                     # JSON/CSV outputs from experiment runs (checked-in examples included)
@@ -207,7 +206,6 @@ Each run prints a diagnostic report (query coverage of the candidate pool, per-m
 
 - **`experiments/run_b_d_comparison.py`** — reproduces the full-dataset comparison between Method B and Method D across selection budgets of 1%, 2%, 5%, 10% and 20% of the dataset, saving results to `results/full_dataset_results_real.json`.
 - **`experiments/sensitivity_method_d.py`** — sweeps one of `alpha`, `expansion`, or `budget` (set via the `MODE` constant at the top of the file) to study Method D's sensitivity, saving a CSV to `results/sensitivity_<mode>_<dataset>.csv`.
-- **`experiments/query_frequency.py`** — standalone helper for inspecting item frequency in the query log and the coverage of a candidate pool; used to build `top_frequency` pools.
 
 ## Results
 
