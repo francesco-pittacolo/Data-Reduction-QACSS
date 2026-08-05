@@ -59,7 +59,7 @@ def run(D, budget, queries, quiet=False):
         print("METHOD B - IndepDF")
         print("=" * 60)
         print(f"\nCandidate universe ({len(D)}):")
-        #print(D[:10])
+
         print("\nSelected subset:")
         if len(selected) > 20:
             print("(" + ", ".join(map(str, selected[:20])) + ", ...)")
@@ -75,11 +75,6 @@ def run(D, budget, queries, quiet=False):
 
 
 def run_full_dataset(n_items, keep_ratio, queries, quiet=False, top_n_print=20):
-    """
-    Run IndepDF over ALL item ids 1..n_items (no embeddings needed), keeping
-    `keep_ratio` fraction of them. Uses a vectorized numpy implementation
-    since the full catalogue can be large.
-    """
     start = time.time()
 
     weights = np.zeros(n_items)
@@ -87,7 +82,7 @@ def run_full_dataset(n_items, keep_ratio, queries, quiet=False, top_n_print=20):
     for q in queries:
         query_weight = 1.0 / n_queries
         per_element_weight = query_weight / len(q)
-        # ids in queries.csv are 1-based
+
         np.add.at(weights, np.array(q) - 1, per_element_weight)
 
     budget = int(n_items * keep_ratio)
