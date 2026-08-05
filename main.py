@@ -15,7 +15,6 @@ def parse_args():
     )
     return parser.parse_args()
 
-
 def main():
     args = parse_args()
 
@@ -23,7 +22,6 @@ def main():
         run_all(CONFIG)
     else:
         run_method(args.mode, CONFIG)
-
 
 if __name__ == "__main__":
     main()
