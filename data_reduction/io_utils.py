@@ -1,11 +1,3 @@
-"""
-Loading item embeddings and query logs from disk.
-
-This is the single, canonical version of code that used to be duplicated
-(with small inconsistencies) across method_A.py, method_C.py, method_B_test.py,
-top_k_in_queries.py and utility.py.
-"""
-
 import csv
 import json
 import os
